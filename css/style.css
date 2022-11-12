@@ -3,10 +3,6 @@
   padding: 0;
 }
 
-/* $color_3: #5ce1e6; */
-/* $color_4: #ffffff;
-$color_5: var(--color);
-$color_6: #fff; */
 /*mobile*/
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   body {
@@ -54,7 +50,58 @@ $color_6: #fff; */
   .header_ul_li_menu:hover a {
     color: #000;
   }
-  /*My main*/
+}
+/*Desktop*/
+@media (min-width: 768px) {
+  body {
+    display: grid;
+    background-color: #fefbe9;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+  }
+  nav {
+    display: flex;
+    justify-content: right;
+  }
+  .logo {
+    width: 75px;
+    height: 50px;
+    margin: 0 auto;
+  }
+  .header_div_menu {
+    text-align: center;
+  }
+  .header_ul_li_menu {
+    display: inline-block;
+    color: #5ce1e6;
+    padding: 10px 10px 10px;
+  }
+  .header_ul_li_menu:hover a {
+    color: #000;
+  }
+  .header_nav_menu {
+    text-decoration: none;
+    color: #5ce1e6;
+    display: inline-block;
+    font-size: larger;
+    font-family: "Anton", sans-serif;
+  }
+  h1 {
+    padding-top: 10px;
+    text-align: center;
+    font-family: "Pacifico", cursive;
+    color: #000;
+  }
+  .title_nav {
+    padding-left: 40px;
+  }
+}
+/*#8707ff - violeta #5ce1e6 - turquesa*/
+/*mobile*/
+@media screen and (min-width: 0px) and (max-width: 767px) {
   .main_section_article_divImage {
     display: flex;
     justify-content: center;
@@ -91,12 +138,12 @@ $color_6: #fff; */
     grid-template-columns: 1fr;
     padding: 50px;
     background-color: #0274be;
-    color: #ffffff;
+    color: #fff;
   }
   .card {
     align-items: center;
     width: 120px;
-    height: 170px;
+    height: 190px;
     border-radius: 30px;
     background: #e0e0e0;
     box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
@@ -117,126 +164,9 @@ $color_6: #fff; */
     font-family: "Anton", sans-serif;
     padding: 15px;
   }
-  /* my footer */
-  footer {
-    background-color: #a9a9a9;
-    padding-bottom: 35px;
-    padding-top: 60px;
-  }
-  h3 {
-    font-size: 5px;
-    text-align: center;
-    display: none;
-  }
-  h4 {
-    font-size: 10px;
-    text-align: center;
-  }
-  footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  footer img {
-    justify-content: center;
-    width: 25px;
-    height: 25px;
-    padding: 5px;
-  }
-  footer ul {
-    display: flex;
-  }
-  /* From uiverse.io */
-  .footer_button {
-    --color: variables.$color_btn_footer;
-    font-family: inherit;
-    display: inline-block;
-    width: 100px;
-    height: 23px;
-    margin: 20px;
-    position: relative;
-    overflow: hidden;
-    border: 2px solid var(--color);
-    transition: color 0.5s;
-    z-index: 1;
-    font-size: 12px;
-    border-radius: 6px;
-    font-weight: 500;
-    color: var(--color);
-  }
-  .footer_button:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    background: var(--color);
-    height: 150px;
-    width: 200px;
-    border-radius: 50%;
-  }
-  .footer_button:hover {
-    color: #fff;
-  }
-  .footer_button:before {
-    top: 100%;
-    left: 100%;
-    transition: all 0.7s;
-  }
-  .footer_button:hover:before {
-    top: -30px;
-    left: -30px;
-  }
-  .footer_button:active:before {
-    background: #3a0ca3;
-    transition: background 0s;
-  }
 }
-/*Desktop*/
+/*desktop*/
 @media (min-width: 768px) {
-  body {
-    display: grid;
-    background-color: #fefbe9;
-  }
-  header {
-    display: flex;
-    flex-direction: column;
-    background-color: #F8F9FA;
-  }
-  nav {
-    display: flex;
-    justify-content: right;
-  }
-  .logo {
-    width: 75px;
-    height: 75px;
-    margin: 0 auto;
-  }
-  .header_div_menu {
-    text-align: center;
-  }
-  .header_ul_li_menu {
-    display: inline-block;
-    color: #5ce1e6;
-    padding: 10px 10px 10px;
-  }
-  .header_ul_li_menu:hover a {
-    color: #000;
-  }
-  .header_nav_menu {
-    text-decoration: none;
-    color: #5ce1e6;
-    display: inline-block;
-    font-size: larger;
-    font-family: "Anton", sans-serif;
-  }
-  h1 {
-    padding-top: 10px;
-    text-align: center;
-    font-family: "Pacifico", cursive;
-    color: #000;
-  }
-  .title_nav {
-    padding-left: 40px;
-  }
   h2 {
     font-size: 20px;
     padding: 20px;
@@ -266,7 +196,6 @@ $color_6: #fff; */
     padding-top: 50px;
     font-size: large;
   }
-  /*my main*/
   .main_section_article_divImage {
     text-align: left;
   }
@@ -325,6 +254,85 @@ $color_6: #fff; */
     font-family: "Anton", sans-serif;
     padding: 15px;
   }
+}
+/* my footer */
+/* ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  } */
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  footer {
+    background-color: #a9a9a9;
+    padding-bottom: 35px;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer h3 {
+    display: none;
+  }
+  footer img {
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    padding: 5px;
+  }
+  footer ul {
+    list-style-type: none;
+    display: flex;
+  }
+  h4 {
+    font-size: 10px;
+    text-align: center;
+  }
+  /* From uiverse.io */
+  .footer_button {
+    --color: variables.$color_btn_footer;
+    font-family: inherit;
+    display: inline-block;
+    width: 100px;
+    height: 23px;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color 0.5s;
+    z-index: 1;
+    font-size: 12px;
+    border-radius: 6px;
+    font-weight: 500;
+    color: var(--color);
+  }
+  .footer_button:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+  }
+  .footer_button:hover {
+    color: #fff;
+  }
+  .footer_button:before {
+    top: 100%;
+    left: 100%;
+    transition: all 0.7s;
+  }
+  .footer_button:hover:before {
+    top: -30px;
+    left: -30px;
+  }
+  .footer_button:active:before {
+    background: #3a0ca3;
+    transition: background 0s;
+  }
+}
+/*desktop*/
+@media (min-width: 768px) {
   /* my footer*/
   footer {
     display: grid;
@@ -365,7 +373,7 @@ $color_6: #fff; */
     border: none;
     border-radius: 15px;
     padding: 10px;
-    background-color: #e8e8e8;
+    background-color: #fff;
     box-shadow: 5px 5px 12px #ffffff, -6px -6px 12px #c5c5c5;
     font-size: small;
     font-weight: bold;
@@ -373,7 +381,7 @@ $color_6: #fff; */
     max-height: 35px;
   }
   input:focus {
-    outline-color: white;
+    outline-color: #fff;
     place-content: "Enter your message!";
   }
   .footer_button {
@@ -417,6 +425,5 @@ $color_6: #fff; */
     transition: background 0s;
   }
 }
-/*#8707ff - violeta #5ce1e6 - turquesa*/
 
 /*# sourceMappingURL=style.css.map */
