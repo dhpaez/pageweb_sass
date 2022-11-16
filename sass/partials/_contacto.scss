@@ -1,1 +1,115 @@
-@use 'variables';
+@use './variables';
+
+/*mobile*/
+@media screen and (min-width: 0px) and (max-width: 767px) {
+
+    section{
+        .section-form-input{
+            padding-left: 15px;
+            padding-right: 15px;
+        }     
+        
+        button{
+			--color: variables.$color_btn_footer;
+				font-family: inherit;
+				display: inline-block;
+				width: 100px;
+				height: 35px;
+				margin: 20px;
+				position: relative;
+				overflow: hidden;
+				border: 2px solid var(--color);
+				transition: color .5s;
+				z-index: 1;
+				font-size: 10px;
+				border-radius: 6px;
+				font-weight: 500;
+				color: var(--color);
+				&:before {
+					content: "";
+					position: absolute;
+					z-index: -1;
+					background: var(--color);
+					height: 150px;
+					width: 200px;
+					border-radius: 50%;
+					top: 100%;
+					left: 100%;
+					transition: all .7s;
+				}
+				&:hover {
+					color: variables.$color_white;
+					&:before {
+						top: -30px;
+						left: -30px;
+					}
+				}
+				&:active {
+					&:before {
+						background: #3a0ca3;
+						transition: background 1.5s;
+					}
+				}
+		}
+	
+    }
+}
+/*desktop*/
+@media (min-width: 768px) {
+    
+    section{
+        h2{
+            font-size: 20px;
+            padding: 20px;
+            text-align: center;
+    
+        }
+        .section-input{
+
+            width: 300px;
+
+        }
+        .section_button {
+            --color: variables.$color_btn_footer;
+            font-family: inherit;
+            display: inline-block;
+            width: 125px;
+            height: 40px;
+            margin: 20px;
+            position: relative;
+            overflow: hidden;
+            border: 2px solid var(--color);
+            transition: color .5s;
+            z-index: 1;
+            font-size: 12px;
+            border-radius: 6px;
+            font-weight: 500;
+            color: var(--color);
+            &:before {
+                content: "";
+                position: absolute;
+                z-index: -1;
+                background: var(--color);
+                height: 150px;
+                width: 200px;
+                border-radius: 50%;
+                top: 100%;
+                left: 100%;
+                transition: all .7s;
+            }
+            &:hover {
+                color: variables.$color_white;
+                &:before {
+                    top: -30px;
+                    left: -30px;
+                }
+            }
+            &:active {
+                &:before {
+                    background: #3a0ca3;
+                    transition: background 0s;
+                }
+            }         
+    }
+}    
+}
