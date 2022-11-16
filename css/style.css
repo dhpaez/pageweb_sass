@@ -364,10 +364,8 @@
 }
 /*mobile*/
 @media only screen and (min-width: 0px) and (max-width: 767px) {
-  article {
-    /* .article-div-select{
-    	width: 155px;
-    } */
+  article .main_menu_select {
+    padding-bottom: 15px;
   }
   article .div-buy {
     padding-left: 100px;
