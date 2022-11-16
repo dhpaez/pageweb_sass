@@ -177,6 +177,7 @@
   .main_section_article_div_img {
     width: 450px;
     height: 300px;
+    border: solid #999 3px;
   }
   .image_size_main {
     width: 300px;
@@ -412,10 +413,8 @@
   }
 }
 @media (min-width: 768px) {
-  article {
-    /* .article-div-select{
-    	width: 170px;
-    } */
+  article .promo {
+    margin-bottom: 25px;
   }
   article button {
     --color: variables.$color_btn_footer;

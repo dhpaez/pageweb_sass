@@ -11,6 +11,7 @@
 		.div-buy{
 			padding-left: 100px;
 		}
+		
 		button{
 			--color: variables.$color_btn_footer;
 				font-family: inherit;
@@ -60,9 +61,9 @@
 @media (min-width: 768px) {
     
 	article{
-		/* .article-div-select{
-			width: 170px;
-		} */
+		.promo{
+			margin-bottom: 25px;
+		}
 		button{
 			--color: variables.$color_btn_footer;
 				font-family: inherit;
